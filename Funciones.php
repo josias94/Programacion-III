@@ -58,4 +58,18 @@
 	{
 		copy($origen,$destino);
 	}	
+
+
+	function ProductoToJSON($producto,$destino)
+	{
+		$producto->path = $destino;
+		return json_encode($producto);
+	}
+	
+
+
+
+
+
+
 ?>
